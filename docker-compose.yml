@@ -1,0 +1,17 @@
+version: "1"
+
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - '6379:6379'
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    environment:
+      -  'MONGODB_USER=fiap'
+      -  'MONGODB_PASS=fiap123'
+    ports:
+      - '27017:27017'
+    command: mongod     
