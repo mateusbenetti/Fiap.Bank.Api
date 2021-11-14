@@ -1,19 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace Fiap.Bank.Application.UseCases.Veiculo.BuscarVeiculo
+namespace Fiap.Bank.Domain.Entities
 {
-    public class BuscarVeiculoOutput
+    public enum TipoVeiculo
     {
-        public ICollection<VeiculosOutPut> Veiculos { get; set; }
+        Carro,
+        Moto
     }
 
-    public class VeiculosOutPut
+    public class Veiculo
     {
         public int Ano { get; set; }
         public Guid Id { get; set; }
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public string Placa { get; set; }
+        public TipoVeiculo Tipo { get; set; }
     }
 }

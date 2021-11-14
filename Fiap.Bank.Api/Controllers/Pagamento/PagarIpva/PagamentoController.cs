@@ -9,7 +9,7 @@ namespace Fiap.Bank.Api.Controllers.v1.Pagamento.PagarIpva
         [HttpPost("PagarIpva")]
         public IActionResult PagarIpva()
         {
-            return View();
+            return Ok(buscarVeiculoResponse);
         }
     }
 }

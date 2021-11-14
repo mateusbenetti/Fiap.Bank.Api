@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Fiap.Bank.Infra.Shared.MongoDb
@@ -11,8 +12,15 @@ namespace Fiap.Bank.Infra.Shared.MongoDb
     {
         public static IServiceCollection AddMongoDb(this IServiceCollection services, IConfiguration configuration)
         {
+            return services.AddMongoDb(mongoConfiguration =>
+                configuration.GetSection(nameof(MongoConfiguration)).Bind(mongoConfiguration)
+            );
+        }
+
+        public static IServiceCollection AddMongoDb(this IServiceCollection services, Action<MongoConfiguration> config)
+        {
             services.AddOptions<MongoConfiguration>()
-               .Bind(configuration.GetSection(nameof(MongoConfiguration)));
+                .Configure(config);
 
             services.AddSingleton(sp =>
             {
