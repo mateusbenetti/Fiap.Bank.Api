@@ -1,4 +1,4 @@
-﻿namespace Fiap.Bank.Repository.Interface
+﻿namespace Fiap.Bank.Infra.Interface
 {
     public interface IPagamentoRepository
     {

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Bank.Api", "Fiap.Bank.Api\Fiap.Bank.Api.csproj", "{D0803728-AA58-48DD-BE48-18B6112E795D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Bank.Api", "Fiap.Bank.Api\Fiap.Bank.Api.csproj", "{D0803728-AA58-48DD-BE48-18B6112E795D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Bank.Domain", "Fiap.Bank.Domain\Fiap.Bank.Domain.csproj", "{CB346FF1-3B01-400E-89A8-ECB4E35D0553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Bank.Domain", "Fiap.Bank.Domain\Fiap.Bank.Domain.csproj", "{CB346FF1-3B01-400E-89A8-ECB4E35D0553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Bank.Application", "Fiap.Bank.Application\Fiap.Bank.Application.csproj", "{8987503D-485E-4D9F-BAC2-556E8149E204}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Bank.Application", "Fiap.Bank.Application\Fiap.Bank.Application.csproj", "{8987503D-485E-4D9F-BAC2-556E8149E204}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Bank.Infra", "Fiap.Bank.Infra\Fiap.Bank.Infra.csproj", "{EE428FB6-5C05-4A0A-88DF-E1CFC5F507EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Bank.Infra", "Fiap.Bank.Infra\Fiap.Bank.Infra.csproj", "{EE428FB6-5C05-4A0A-88DF-E1CFC5F507EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Bank.Config", "Fiap.Bank.Config\Fiap.Bank.Config.csproj", "{FAC65306-91E7-4A31-8373-EE4E41454917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Bank.Config", "Fiap.Bank.Config\Fiap.Bank.Config.csproj", "{FAC65306-91E7-4A31-8373-EE4E41454917}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{241FE1DF-515C-4B51-9386-7BC61C64566B}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,8 +19,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{21E879EA-E699-42A6-8BC6-92F0725DE4E5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Bank.Repository", "Fiap.Bank.Repository\Fiap.Bank.Repository.csproj", "{625EF67B-AFEE-4226-8560-1665198717DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,10 +46,6 @@ Global
 		{FAC65306-91E7-4A31-8373-EE4E41454917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAC65306-91E7-4A31-8373-EE4E41454917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAC65306-91E7-4A31-8373-EE4E41454917}.Release|Any CPU.Build.0 = Release|Any CPU
-		{625EF67B-AFEE-4226-8560-1665198717DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{625EF67B-AFEE-4226-8560-1665198717DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{625EF67B-AFEE-4226-8560-1665198717DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{625EF67B-AFEE-4226-8560-1665198717DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,7 +56,6 @@ Global
 		{8987503D-485E-4D9F-BAC2-556E8149E204} = {21E879EA-E699-42A6-8BC6-92F0725DE4E5}
 		{EE428FB6-5C05-4A0A-88DF-E1CFC5F507EF} = {21E879EA-E699-42A6-8BC6-92F0725DE4E5}
 		{FAC65306-91E7-4A31-8373-EE4E41454917} = {21E879EA-E699-42A6-8BC6-92F0725DE4E5}
-		{625EF67B-AFEE-4226-8560-1665198717DD} = {21E879EA-E699-42A6-8BC6-92F0725DE4E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A821445C-DE3C-49F8-B972-904E92895A0F}

@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Fiap.Bank.Infra.Data;
+using Fiap.Bank.Infra.Interface;
+using Fiap.Bank.Repository.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
@@ -28,6 +31,14 @@ namespace Fiap.Bank.Infra.Shared.MongoDb
                 return new MongoClient(mongoConfiguration.ConnectionString);
             });
 
+            services.AddVeiculoCollection();
+
+            return services;
+        }
+
+        public static IServiceCollection AddRepositories(this IServiceCollection services)
+        {
+            services.AddSingleton<IVeiculoRepository, VeiculoRepository>();
             return services;
         }
     }

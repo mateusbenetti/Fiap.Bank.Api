@@ -15,7 +15,6 @@
     <ProjectReference Include="..\Fiap.Bank.Config\Fiap.Bank.Config.csproj" />
     <ProjectReference Include="..\Fiap.Bank.Domain\Fiap.Bank.Domain.csproj" />
     <ProjectReference Include="..\Fiap.Bank.Infra\Fiap.Bank.Infra.csproj" />
-    <ProjectReference Include="..\Fiap.Bank.Repository\Fiap.Bank.Repository.csproj" />
   </ItemGroup>
 
 </Project>

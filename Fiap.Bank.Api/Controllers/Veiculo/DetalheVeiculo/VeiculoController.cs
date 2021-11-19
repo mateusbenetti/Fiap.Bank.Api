@@ -9,7 +9,7 @@ namespace Fiap.Bank.Api.Controllers.v1.Veiculo.DetalheVeiculo
         [HttpGet("DetalheVeiculo")]
         public IActionResult DetalheVeiculo()
         {
-            return View();
+            return Ok();
         }
     }
 }

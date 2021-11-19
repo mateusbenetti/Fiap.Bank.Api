@@ -1,4 +1,5 @@
 ﻿using Fiap.Bank.Application.UseCases.Veiculo.BuscarVeiculo;
+using Fiap.Bank.Application.UseCases.Veiculo.CriarVeiculos;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics.CodeAnalysis;
 
@@ -9,7 +10,9 @@ namespace Fiap.Bank.Application.UseCases.DependencyInjection
     {
         public static IServiceCollection AddUseCases(this IServiceCollection services)
         {
-            services.AddBuscarVeiculoUseCase();
+            services
+                .AddCriarVeiculosUseCase()
+                .AddBuscarVeiculoUseCase();
 
             return services;
         }
